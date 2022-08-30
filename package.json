@@ -1,0 +1,19 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "css",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evincent83/openclassrooms.git"
+  },
+  "author": "enzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evincent83/openclassrooms/issues"
+  },
+  "homepage": "https://github.com/evincent83/openclassrooms#readme"
+}
