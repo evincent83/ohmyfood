@@ -181,7 +181,7 @@ button {
   box-shadow: 4px 4px 20px #cacaca;
   transition: all 0.5s;
 }
-button:hover {
+button:active {
   filter: brightness(1.1);
   box-shadow: 4px 4px 20px #939393;
   cursor: pointer;
@@ -215,7 +215,7 @@ nav .nav_elem {
   box-shadow: 4px 4px 20px #cacaca;
   margin: 0px 0px 30px 15px;
 }
-nav .nav_elem:hover {
+nav .nav_elem:active {
   background-color: hsl(267deg, 100%, 96%);
 }
 nav .nav_elem .fa-solid {
@@ -493,6 +493,11 @@ main .fa-heart:active {
   #background_loader #loader {
     top: -45%;
   }
+  button:hover {
+    filter: brightness(1.1);
+    box-shadow: 4px 4px 20px #939393;
+    cursor: pointer;
+  }
   header #back_index {
     left: 3%;
   }
@@ -505,6 +510,9 @@ main .fa-heart:active {
   }
   nav .nav_elem {
     width: 100%;
+  }
+  nav .nav_elem:hover {
+    background-color: hsl(267deg, 100%, 96%);
   }
   .cards-section {
     display: flex;

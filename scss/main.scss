@@ -137,7 +137,7 @@ button {
   background: linear-gradient($secondary, $primary);
   box-shadow: 4px 4px 20px #cacaca;
   transition: all 0.5s;
-  &:hover {
+  &:active {
     filter: brightness(1.1);
     box-shadow: 4px 4px 20px #939393;
     cursor: pointer;
@@ -165,7 +165,7 @@ nav {
     @include flex-align(flex-start, center, row);
     box-shadow: 4px 4px 20px #cacaca;
     margin: 0px 0px 30px 15px;
-    &:hover {
+    &:active {
       background-color: hsl(267, 100%, 96%);
     }
     .fa-solid {
@@ -453,6 +453,13 @@ main {
         top: -45%;
     }
   }
+  button {
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 4px 4px 20px #939393;
+        cursor: pointer;
+      }
+    }
   header #back_index {
     left: 3%;
   }
@@ -466,8 +473,11 @@ main {
   nav {
     .nav_elem {
       width: 100%;
+      &:hover {
+        background-color: hsl(267, 100%, 96%);
     }
   }
+}
   .cards-section {
     display: flex;
     justify-content: space-between;
